@@ -1,6 +1,6 @@
 manifestVersion: 1.1
-id: unifi-network
-icon: icon.png
+id: micro-unifi-network
+icon: https://github.com/micro-app-store/app-store/blob/main/micro-unifi-network/icon.png?raw=true
 category: network
 name: UniFi Network
 version: "8.4.62"
@@ -26,8 +26,8 @@ repo: https://github.com/linuxserver/docker-unifi-network-application
 support: https://help.ui.com/hc/en-us
 port: 8443
 gallery:
-  - 1.png
-  - 2.png
+  - https://github.com/micro-app-store/app-store/blob/main/micro-unifi-network/1.png?raw=true
+  - https://github.com/micro-app-store/app-store/blob/main/micro-unifi-network/2.png?raw=true
 path: ""
 torOnly: false
-submitter: micro
+submitter: Micro

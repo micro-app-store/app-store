@@ -1,0 +1,36 @@
+manifestVersion: 1.1
+id: micro-teslamate
+icon: https://github.com/micro-app-store/app-store/blob/main/micro-teslamate/icon.png?raw=true
+category: automation
+name: TeslaMate
+version: "1.30.1"
+tagline: A powerful, self-hosted data logger for your Tesla
+description: >-
+  A powerful, self-hosted data logger for your Tesla.
+
+
+   - High precision drive data recording
+   - No additional vampire drain: the car will fall asleep as soon as possible
+   - Automatic address lookup
+   - Easy integration into Home Assistant (via MQTT)
+   - Easy integration into Node-Red & Telegram (via MQTT)
+   - Geo-fencing feature to create custom locations
+   - Supports multiple vehicles per Tesla Account
+   - Charge cost tracking
+   - Import from TeslaFi and tesla-apiscraper
+releaseNotes: >-
+  Full release notes can be found at https://github.com/teslamate-org/teslamate/releases
+developer: Adrian Kumpf
+website: https://www.ui.com/
+dependencies: []
+repo: https://github.com/teslamate-org/teslamate
+support: https://docs.teslamate.org/docs/installation/docker
+port: 4000
+gallery:
+  - https://github.com/micro-app-store/app-store/blob/main/micro-teslamate/1.png?raw=true
+  - https://github.com/micro-app-store/app-store/blob/main/micro-teslamate/2.png?raw=true
+  - https://github.com/micro-app-store/app-store/blob/main/micro-teslamate/3.png?raw=true
+path: ""
+deterministicPassword: true
+torOnly: false
+submitter: Micro

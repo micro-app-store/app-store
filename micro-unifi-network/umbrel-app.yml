@@ -1,0 +1,33 @@
+manifestVersion: 1.1
+id: unifi-network
+icon: icon.png
+category: network
+name: UniFi Network
+version: "8.4.62"
+tagline: Enterprise wireless software engine ideal for high-density client deployments
+description: >-
+  The UniFi Network application software is a powerful, enterprise wireless software engine
+  ideal for high-density client deployments requiring low latency and high uptime performance.
+  
+  For UniFi to adopt other devices, e.g. an Access Point, it is required to change the inform
+  IP address. Because Unifi runs inside Docker by default it uses an IP address not accessible by
+  other devices. To change this go to Settings > System Settings > Controller Configuration and set
+  the Controller Hostname/IP to a hostname or IP address accessible by your devices.
+  
+  Additionally the checkbox “Override inform host with controller hostname/IP” has to be checked,
+  so that devices can connect to the controller during adoption
+  (devices use the inform-endpoint during adoption).
+releaseNotes: >-
+  Full release notes can be found at https://github.com/linuxserver/docker-unifi-network-application/releases
+developer: Ubiquiti, Inc.
+website: https://www.ui.com/
+dependencies: []
+repo: https://github.com/linuxserver/docker-unifi-network-application
+support: https://help.ui.com/hc/en-us
+port: 8443
+gallery:
+  - 1.png
+  - 2.png
+path: ""
+torOnly: false
+submitter: micro

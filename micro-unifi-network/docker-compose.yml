@@ -1,0 +1,51 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      APP_HOST: micro-unifi-network_server_1
+      APP_PORT: 8443
+
+  server:
+    image: lscr.io/linuxserver/unifi-network-application:8.4.62-ls64
+    container_name: unifi-network
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+    ports:
+      - 8443:8443
+      - 3478:3478/udp
+      - 10001:10001/udp
+      - 8080:8080
+      - 1900:1900/udp
+      - 6789:6789
+    restart: unless-stopped
+    environment:
+      - TZ=Etc/UTC
+      - MONGO_USER=unifi
+      - MONGO_PASS=moneyprintergobrrr
+      - MONGO_HOST=micro-unifi-network_db_1
+      - MONGO_PORT=27017
+      - MONGO_DBNAME=unifi
+      - MONGO_AUTHSOURCE=admin
+      - MEM_LIMIT=1024
+      - MEM_STARTUP=1024
+    user: "1000:1000"
+    init: true
+    depends_on:
+      - db
+
+  db:
+    image: docker.io/mongo:8.0
+    container_name: unifi-db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=moneyprintergobrrr
+      - MONGO_USER=unifi
+      - MONGO_PASS=moneyprintergobrrr
+      - MONGO_DBNAME=unifi
+      - MONGO_AUTHSOURCE=admin
+    volumes:
+      - ${APP_DATA_DIR}/data/db:/data/db
+      - ${APP_DATA_DIR}/data/mongo/init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh:ro
+    restart: unless-stopped

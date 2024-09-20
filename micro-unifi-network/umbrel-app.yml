@@ -1,7 +1,7 @@
 manifestVersion: 1.1
 id: micro-unifi-network
 icon: https://github.com/micro-app-store/app-store/blob/main/micro-unifi-network/icon.png?raw=true
-category: network
+category: networking
 name: UniFi Network
 version: "8.4.62"
 tagline: Enterprise wireless software engine ideal for high-density client deployments

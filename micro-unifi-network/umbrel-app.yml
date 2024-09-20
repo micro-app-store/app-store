@@ -30,6 +30,7 @@ port: 8443
 gallery:
   - https://github.com/micro-app-store/app-store/blob/main/micro-unifi-network/1.png?raw=true
   - https://github.com/micro-app-store/app-store/blob/main/micro-unifi-network/2.png?raw=true
+  - https://github.com/micro-app-store/app-store/blob/main/micro-unifi-network/3.png?raw=true
 path: ""
 torOnly: false
 submitter: Micro

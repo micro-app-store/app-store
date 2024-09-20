@@ -10,8 +10,6 @@ services:
 
   server:
     image: lscr.io/linuxserver/unifi-network-application:8.4.62-ls64
-    #user: "1000:1000"
-    container_name: unifi-network
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
     ports:
@@ -19,10 +17,10 @@ services:
       - 3478:3478/udp
       - 10001:10001/udp
       - 8080:8080
-      - 1900:1900/udp
-      - 6789:6789
     restart: unless-stopped
     environment:
+      - PUID=1000
+      - PGID=1000
       - TZ=Etc/UTC
       - MONGO_USER=unifi
       - MONGO_PASS=moneyprintergobrrr
@@ -32,14 +30,11 @@ services:
       - MONGO_AUTHSOURCE=admin
       - MEM_LIMIT=1024
       - MEM_STARTUP=1024
-    init: true
     depends_on:
       - db
 
   db:
-    image: docker.io/mongo:8.0
-    user: "1000:1000"
-    container_name: unifi-db
+    image: docker.io/mongo:6.0
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=moneyprintergobrrr
@@ -50,4 +45,4 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/db:/data/db
       - ${APP_DATA_DIR}/data/mongo/init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh:ro
-    restart: unless-stopped
+    restart: always

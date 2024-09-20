@@ -6,9 +6,11 @@ services:
     environment:
       APP_HOST: micro-unifi-network_server_1
       APP_PORT: 8443
+      PROXY_AUTH_ADD: "false"
 
   server:
     image: lscr.io/linuxserver/unifi-network-application:8.4.62-ls64
+    #user: "1000:1000"
     container_name: unifi-network
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
@@ -30,13 +32,13 @@ services:
       - MONGO_AUTHSOURCE=admin
       - MEM_LIMIT=1024
       - MEM_STARTUP=1024
-    user: "1000:1000"
     init: true
     depends_on:
       - db
 
   db:
     image: docker.io/mongo:8.0
+    user: "1000:1000"
     container_name: unifi-db
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root

@@ -42,7 +42,7 @@ developer: Ubiquiti, Inc.
 website: https://www.ui.com/
 dependencies: []
 support: https://help.ui.com/hc/en-us
-port: 9041
+port: 9042
 gallery:
   - https://github.com/micro-app-store/app-store/blob/main/micro-uisp/1.png?raw=true
   - https://github.com/micro-app-store/app-store/blob/main/micro-uisp/2.png?raw=true

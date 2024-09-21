@@ -32,12 +32,10 @@ releaseNotes: >-
    - Improved the password generation algorithm. It now meets new stricter criteria.
    - Improved the situation when your UISP GUI cannot reach the UISP server. The error message is now more clear.
   
-  
   CRM:
    - Added a new field "isAdmin" to ticket comments in Client Zone API.
    - Added a new webhook event for service outage, separated from the service edit event.
    - Allowed ending a quoted service via API.
-
 
   Full release notes can be found at https://community.ui.com/releases/UISP-Application-2-4-143/3eeda376-f995-420b-9bc5-1c55d5ea3d20
 developer: Ubiquiti, Inc.

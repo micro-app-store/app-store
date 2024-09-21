@@ -9,6 +9,8 @@ A powerful, self-hosted data logger for your Tesla.
 
 ## Documentation
 
+**Grafana Dashboard Port:** 9041
+
 The documentation is available at [https://docs.teslamate.org](https://docs.teslamate.org/)
 
 ## Features

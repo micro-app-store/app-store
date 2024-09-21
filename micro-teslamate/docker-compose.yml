@@ -44,7 +44,7 @@ services:
       - GF_AUTH_ORG_ROLE=viewer
       - GF_AUTH_DISABLE_LOGIN_FORM=true
     ports:
-      - 3000:3000
+      - 9041:3000
     volumes:
       - ${APP_DATA_DIR}/data/grafana:/var/lib/grafana
     depends_on:

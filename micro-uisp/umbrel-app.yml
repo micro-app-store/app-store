@@ -1,0 +1,54 @@
+manifestVersion: 1.1
+id: micro-uisp
+icon: https://github.com/micro-app-store/app-store/blob/main/micro-uisp/icon.png?raw=true
+category: networking
+name: UISP
+version: "2.4.143"
+tagline: Complete ISP network and business management with mobile app integration
+description: >-
+  Growing an ISP requires highly skilled employees and costly, complex systems.
+  
+  
+  UISP, our end-to-end platform, reduces these overhead concerns by streamlining network creation,
+  maintenance, and subscriber management, so you can focus solely on growing your business.
+  
+  
+  Plan your network with the UISP Design Center, set up and align your devices with the UISP Mobile app,
+  and monitor customer billing from a centralized UISP server.
+releaseNotes: >-
+  UISP Application 2.4.143 is a new version aimed at stabilizing and further improving the previous stable version 2.4.93.
+
+
+  Network:
+   - All notes, notifications, and devices under legacy subscribers were migrated to classic ones. CRM options were updated accordingly.
+   - Added the DNS Server configuration in the side panel of UISP-R/C devices with FW >= 5.0.0.
+   - Added the Interfaces configuration in the side panel of UISP-R/C devices with FW >= 5.0.0.
+   - Added backup radio data to the utilization statistics.
+   - Added the Remote Access feature for EdgeSwitch X devices.
+   - Added automatic disable of an ONU device assigned to a suspended subscriber. ONU remains active in UISP, but it doesn't provide service.
+   - Improved the FW upgrade manager. It now prevents the user from upgrading cs to non-cs FW (this may be done via the device's local web UI). If the user has a cs FW then it can be only upgraded to another cs version. The same works for lite FW versions. If the FW is non-cs + non-lite, then it can be only upgraded to another non-cs + non-lite version in UISP.
+   - Improved device statistics to show traffic for all ports.
+   - Improved the location of Switch to Static IP action in the side panel of UISP-R devices.
+   - Improved the password generation algorithm. It now meets new stricter criteria.
+   - Improved the situation when your UISP GUI cannot reach the UISP server. The error message is now more clear.
+  
+  
+  CRM:
+   - Added a new field "isAdmin" to ticket comments in Client Zone API.
+   - Added a new webhook event for service outage, separated from the service edit event.
+   - Allowed ending a quoted service via API.
+
+
+  Full release notes can be found at https://community.ui.com/releases/UISP-Application-2-4-143/3eeda376-f995-420b-9bc5-1c55d5ea3d20
+developer: Ubiquiti, Inc.
+website: https://www.ui.com/
+dependencies: []
+support: https://help.ui.com/hc/en-us
+port: 9041
+gallery:
+  - https://github.com/micro-app-store/app-store/blob/main/micro-uisp/1.png?raw=true
+  - https://github.com/micro-app-store/app-store/blob/main/micro-uisp/2.png?raw=true
+  - https://github.com/micro-app-store/app-store/blob/main/micro-uisp/3.png?raw=true
+path: ""
+torOnly: false
+submitter: Micro

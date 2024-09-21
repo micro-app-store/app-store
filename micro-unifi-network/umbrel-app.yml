@@ -26,7 +26,7 @@ website: https://www.ui.com/
 dependencies: []
 repo: https://github.com/linuxserver/docker-unifi-network-application
 support: https://help.ui.com/hc/en-us
-port: 8880
+port: 8080
 gallery:
   - https://github.com/micro-app-store/app-store/blob/main/micro-unifi-network/1.png?raw=true
   - https://github.com/micro-app-store/app-store/blob/main/micro-unifi-network/2.png?raw=true

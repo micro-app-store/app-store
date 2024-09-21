@@ -9,6 +9,7 @@ services:
 
   server:
     image: nico640/docker-unms:2.4.143
+    user: "1000:1000"
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
     ports:
@@ -16,8 +17,6 @@ services:
       - 2055:2055/udp
     restart: unless-stopped
     environment:
-      - PUID=1000
-      - PGID=1000
       - TZ=Etc/UTC
       - HTTPS_PORT=9443
       - PUBLIC_HTTPS_PORT=9443

@@ -2,12 +2,6 @@ version: "3.7"
 
 services:
 
-  app_proxy:
-    environment:
-      APP_HOST: micro-unifi-network_server_1
-      APP_PORT: 8880
-      PROXY_AUTH_ADD: "false"
-
   server:
     image: lscr.io/linuxserver/unifi-network-application:8.4.62-ls64
     volumes:

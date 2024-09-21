@@ -17,6 +17,8 @@ description: >-
    - Supports multiple vehicles per Tesla Account
    - Charge cost tracking
    - Import from TeslaFi and tesla-apiscraper
+  
+  Grafana Dashboard Port: 9041
 releaseNotes: >-
   Full release notes can be found at https://github.com/teslamate-org/teslamate/releases
 developer: Adrian Kumpf

@@ -1,0 +1,29 @@
+manifestVersion: 1.1
+id: micro-blesta
+icon: https://github.com/micro-app-store/app-store/blob/main/micro-blesta/icon.png?raw=true
+category: finance
+name: Blesta
+version: "5.10.2"
+tagline: The billing platform for hosting providers
+description: >-
+  Blesta is well-written, open, and developer friendly; It is no wonder it has become the first
+  choice among a growing number of hosting providers worldwide.
+  
+  
+  Blesta is well-written, source documented, object oriented code that is nearly 100% open.
+  Less than 1%, or only 3 files are encoded — just enough for license protection. Is your current
+  billing system this open? There is nothing like having the source code at your finger tips.
+  If you are a developer, you will love Blesta!
+releaseNotes: >-
+  Full release notes can be found at https://www.blesta.com/2024/08/13/blesta-5-10-2-patch-released/
+developer: Phillips Data, Inc.
+website: https://www.blesta.com/
+dependencies: []
+port: 9043
+gallery:
+  - https://github.com/micro-app-store/app-store/blob/main/micro-blesta/1.png?raw=true
+  - https://github.com/micro-app-store/app-store/blob/main/micro-blesta/2.png?raw=true
+  - https://github.com/micro-app-store/app-store/blob/main/micro-blesta/3.png?raw=true
+path: ""
+torOnly: false
+submitter: Micro

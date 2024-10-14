@@ -10,8 +10,8 @@ services:
   server:
     build:
       context: .
+    user: "1000:1000"
     restart: unless-stopped
-    init: true
     volumes:
       - ${APP_DATA_DIR}/data/config:/var/www/html/config
       - ${APP_DATA_DIR}/data/cache:/var/www/html/cache
@@ -21,6 +21,7 @@ services:
 
   db:
     image: mariadb:11.4.3
+    user: "1000:1000"
     environment:
       - MARIADB_USER=blesta
       - MARIADB_PASSWORD=moneyprintergobrrr

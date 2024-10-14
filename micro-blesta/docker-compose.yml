@@ -9,8 +9,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    build:
-      context: .
+    image: ghcr.io/micro-app-store/blesta:5.10.2
     restart: unless-stopped
     environment:
       - MYSQL_HOST=micro-blesta_db_1

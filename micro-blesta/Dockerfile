@@ -58,12 +58,20 @@ RUN chown -R www-data:www-data /var/www/html/.htaccess && \
 RUN rm -rf /etc/cron.{hourly,daily,weekly,monthly} && \
     echo '*/5 * * * * www-data /usr/local/bin/php /var/www/html/index.php cron' > /etc/cron.d/blesta
 
+# Set enviroment variables
+ENV HOSTNAME="localhost"
+ENV MYSQL_HOST="localhost"
+ENV MYSQL_USER="blesta"
+ENV MYSQL_PASSWORD="blesta"
+ENV MYSQL_DATABASE="blesta"
+
 # Start Apache
-CMD (cron -f &) && \
+CMD (sleep 15 && /usr/local/bin/php /var/www/html/index.php install -dbhost ${MYSQL_HOST} -dbname ${MYSQL_DATABASE} -dbuser ${MYSQL_USER} -dbpass ${MYSQL_PASSWORD} -hostname ${HOSTNAME} -docroot /var/www/html/) && \
+    (cron -f &) && \
     apache2-foreground
 
 # Expose server port
 EXPOSE 8080
 
 # Set required volumes
-VOLUME ["/var/www/html/cache", "/var/www/html/config"]
+VOLUME ["/var/www/html/cache", "/var/www/html/config", "/var/www/uploads"]

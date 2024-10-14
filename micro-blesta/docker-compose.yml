@@ -10,7 +10,6 @@ services:
 
   server:
     image: ghcr.io/micro-app-store/blesta:5.10.2
-    user: "1000:1000"
     restart: unless-stopped
     environment:
       - MYSQL_HOST=micro-blesta_db_1

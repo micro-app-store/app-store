@@ -30,7 +30,7 @@ services:
       - MARIADB_USER=blesta
       - MARIADB_PASSWORD=moneyprintergobrrr
       - MARIADB_DATABASE=blesta
-      - MARIADB_RANDOM_ROOT_PASSWORD=1
+      - MARIADB_ROOT_PASSWORD=moneyprintergobrrr
     volumes:
       - ${APP_DATA_DIR}/data/db:/var/lib/mysql
     restart: always

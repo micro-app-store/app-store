@@ -1,4 +1,0 @@
-<?php
-/**
- * Blesta configuration settings
- */

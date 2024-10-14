@@ -20,6 +20,7 @@ services:
       - ${APP_DATA_DIR}/data/config:/var/www/html/config
       - ${APP_DATA_DIR}/data/cache:/var/www/html/cache
       - ${APP_DATA_DIR}/data/uploads:/var/www/uploads
+    command: "(sleep 15 && /usr/local/bin/php /var/www/html/index.php install -dbhost $${MYSQL_HOST} -dbname $${MYSQL_DATABASE} -dbuser $${MYSQL_USER} -dbpass $${MYSQL_PASSWORD} -hostname localhost -docroot /var/www/html/) && apache2-foreground"
     depends_on:
       - db
 

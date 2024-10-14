@@ -8,10 +8,14 @@ services:
       APP_PORT: 8080
 
   server:
-    build:
-      context: .
+    image: ghcr.io/micro-app-store/blesta:5.10.2
     user: "1000:1000"
     restart: unless-stopped
+    environment:
+      - MYSQL_HOST=micro-blesta_db_1
+      - MYSQL_USER=blesta
+      - MYSQL_PASSWORD=moneyprintergobrrr
+      - MYSQL_DATABASE=blesta
     volumes:
       - ${APP_DATA_DIR}/data/config:/var/www/html/config
       - ${APP_DATA_DIR}/data/cache:/var/www/html/cache

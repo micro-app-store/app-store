@@ -6,6 +6,7 @@ services:
     environment:
       APP_HOST: micro-blesta_server_1
       APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
 
   server:
     image: ghcr.io/micro-app-store/blesta:5.10.2

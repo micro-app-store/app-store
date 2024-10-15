@@ -20,6 +20,7 @@ services:
       - ${APP_DATA_DIR}/data/config:/var/www/html/config
       - ${APP_DATA_DIR}/data/cache:/var/www/html/cache
       - ${APP_DATA_DIR}/data/uploads:/var/www/uploads
+      - ${APP_DATA_DIR}/data/logs:/var/www/logs_blesta/
     depends_on:
       - db
 

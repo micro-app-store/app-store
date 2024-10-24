@@ -3,7 +3,7 @@ id: micro-blesta
 icon: https://github.com/micro-app-store/app-store/blob/main/micro-blesta/icon.png?raw=true
 category: finance
 name: Blesta
-version: "5.10.2"
+version: "5.10.3"
 tagline: The billing platform for hosting providers
 description: >-
   Blesta is well-written, open, and developer friendly; It is no wonder it has become the first
@@ -15,7 +15,7 @@ description: >-
   billing system this open? There is nothing like having the source code at your finger tips.
   If you are a developer, you will love Blesta!
 releaseNotes: >-
-  Full release notes can be found at https://www.blesta.com/2024/08/13/blesta-5-10-2-patch-released/
+  Full release notes can be found at https://www.blesta.com/2024/10/22/blesta-5-10-3-patch-released/
 developer: Phillips Data, Inc.
 website: https://www.blesta.com/
 dependencies: []

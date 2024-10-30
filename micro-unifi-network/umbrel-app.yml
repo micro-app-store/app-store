@@ -24,7 +24,6 @@ releaseNotes: >-
 developer: Ubiquiti, Inc.
 website: https://www.ui.com/
 dependencies: []
-repo: https://github.com/linuxserver/docker-unifi-network-application
 support: https://help.ui.com/hc/en-us
 port: 8080
 gallery:

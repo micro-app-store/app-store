@@ -1,0 +1,35 @@
+manifestVersion: 1.1
+id: micro-mfi
+icon: https://github.com/micro-app-store/app-store/blob/main/micro-mfi/icon.png?raw=true
+category: networking
+name: mFi
+version: "2.1.11"
+tagline: Machine-to-Machine management system
+description: >-
+  Deprecation Notice: Ubiquiti mFi is no longer on active development. Compatible only with x86-64 processors.
+  
+  
+  mFi® is a Machine-to-Machine management system from Ubiquiti Networks®. mFi hardware is managed and
+  monitored from the mFi Controller software.
+  
+  
+  The mFi Controller allows you to create rules that trigger actions based on data from your mFi sensors.
+  For example, motion detection can turn a light on, or a high temperature reading can trigger a fan.
+  
+  
+  The mFi platform is compatible with third‑party devices, making the options unlimited!
+releaseNotes: >-
+  Full release notes can be found at https://github.com/darconeous/docker-mfi-controller/releases
+developer: Ubiquiti, Inc.
+website: https://www.ui.com/
+dependencies: []
+support: https://help.ui.com/hc/en-us
+port: 6443
+gallery:
+  - https://github.com/micro-app-store/app-store/blob/main/micro-mfi/1.png?raw=true
+  - https://github.com/micro-app-store/app-store/blob/main/micro-mfi/2.png?raw=true
+  - https://github.com/micro-app-store/app-store/blob/main/micro-mfi/3.png?raw=true
+path: ""
+torOnly: false
+optimizedForUmbrelHome: true
+submitter: Micro

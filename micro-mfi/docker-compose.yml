@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+
+  server:
+    image: darco/mfi-controller:2.1.11
+    user: "1000:1000"
+    volumes:
+      - ${APP_DATA_DIR}/data/db:/mFi/data
+    ports:
+      - 6843
+      - 6080
+      - 6880
+      - 6443
+      - 2323
+      - 10001/udp
+      - 3478/udp
+      - 1900/udp
+    restart: unless-stopped

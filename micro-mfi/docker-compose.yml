@@ -4,7 +4,6 @@ services:
 
   server:
     image: darco/mfi-controller:2.1.11
-    user: "1000:1000"
     volumes:
       - ${APP_DATA_DIR}/data/db:/mFi/data
     ports:

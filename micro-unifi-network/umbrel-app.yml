@@ -3,7 +3,7 @@ id: micro-unifi-network
 icon: https://github.com/micro-app-store/app-store/blob/main/micro-unifi-network/icon.png?raw=true
 category: networking
 name: UniFi Network
-version: "8.5.6"
+version: "8.6.9"
 tagline: Enterprise wireless software engine ideal for high-density client deployments
 description: >-
   The UniFi Network application software is a powerful, enterprise wireless software engine
